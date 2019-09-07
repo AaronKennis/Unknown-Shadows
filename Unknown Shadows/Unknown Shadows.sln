@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unknown Shadows", "Unknown Shadows\Unknown Shadows.csproj", "{055FF5B1-C091-4598-8E10-F262142A70DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{055FF5B1-C091-4598-8E10-F262142A70DB}.Debug|x86.ActiveCfg = Debug|x86
+		{055FF5B1-C091-4598-8E10-F262142A70DB}.Debug|x86.Build.0 = Debug|x86
+		{055FF5B1-C091-4598-8E10-F262142A70DB}.Release|x86.ActiveCfg = Release|x86
+		{055FF5B1-C091-4598-8E10-F262142A70DB}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC09FD31-DCA6-4E32-827F-640F4B921F79}
+	EndGlobalSection
+EndGlobal
