@@ -41,6 +41,25 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Characters\Character.cs" />
+    <Compile Include="Characters\Enemies\Enemy.cs" />
+    <Compile Include="Characters\Hero.cs" />
+    <Compile Include="Characters\Interfaces\Big.cs" />
+    <Compile Include="Characters\Interfaces\DrowElf.cs" />
+    <Compile Include="Characters\Interfaces\Elf.cs" />
+    <Compile Include="Characters\Interfaces\Female.cs" />
+    <Compile Include="Characters\Interfaces\Hidden.cs" />
+    <Compile Include="Characters\Interfaces\Huge.cs" />
+    <Compile Include="Characters\Interfaces\IGender.cs" />
+    <Compile Include="Characters\Interfaces\INickname.cs" />
+    <Compile Include="Characters\Interfaces\IRace.cs" />
+    <Compile Include="Characters\Interfaces\ISize.cs" />
+    <Compile Include="Characters\Interfaces\Male.cs" />
+    <Compile Include="Characters\Interfaces\Minotaur.cs" />
+    <Compile Include="Characters\Interfaces\Nickname.cs" />
+    <Compile Include="Characters\Interfaces\NoNickname.cs" />
+    <Compile Include="Characters\Interfaces\Regular.cs" />
+    <Compile Include="Characters\Interfaces\Small.cs" />
     <Compile Include="Game1.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
