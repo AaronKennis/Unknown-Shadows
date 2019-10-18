@@ -41,15 +41,19 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Characters\Anrius.cs" />
     <Compile Include="Characters\Character.cs" />
     <Compile Include="Characters\Enemies\Enemy.cs" />
     <Compile Include="Characters\Hero.cs" />
     <Compile Include="Characters\Interfaces\Big.cs" />
+    <Compile Include="Characters\Interfaces\Bite.cs" />
+    <Compile Include="Characters\Interfaces\Classes.cs" />
     <Compile Include="Characters\Interfaces\DrowElf.cs" />
     <Compile Include="Characters\Interfaces\Elf.cs" />
     <Compile Include="Characters\Interfaces\Female.cs" />
     <Compile Include="Characters\Interfaces\Hidden.cs" />
     <Compile Include="Characters\Interfaces\Huge.cs" />
+    <Compile Include="Characters\Interfaces\IAttackBehavior.cs" />
     <Compile Include="Characters\Interfaces\IGender.cs" />
     <Compile Include="Characters\Interfaces\INickname.cs" />
     <Compile Include="Characters\Interfaces\IRace.cs" />
@@ -59,10 +63,14 @@
     <Compile Include="Characters\Interfaces\Nickname.cs" />
     <Compile Include="Characters\Interfaces\NoNickname.cs" />
     <Compile Include="Characters\Interfaces\Regular.cs" />
+    <Compile Include="Characters\Interfaces\Shapeshifter.cs" />
     <Compile Include="Characters\Interfaces\Small.cs" />
     <Compile Include="Game1.cs" />
+    <Compile Include="GameState.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Support\Camera.cs" />
+    <Compile Include="Support\Texture.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MonoGame.Framework">

@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
@@ -9,12 +10,15 @@ namespace Unknown_Shadows
     /// </summary>
     public class Game1 : Game
     {
-        GraphicsDeviceManager graphics;
-        SpriteBatch spriteBatch;
+        public static SpriteBatch sSpriteBatch;
+        public static ContentManager sContent;
+        public static GraphicsDeviceManager sGraphics;
+
+        GameState gameState;
 
         public Game1()
         {
-            graphics = new GraphicsDeviceManager(this);
+            sGraphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
         }
 
@@ -29,6 +33,10 @@ namespace Unknown_Shadows
             // TODO: Add your initialization logic here
 
             base.Initialize();
+            Support.Camera.Setup();
+        
+
+            base.Initialize();
         }
 
         /// <summary>
@@ -38,7 +46,8 @@ namespace Unknown_Shadows
         protected override void LoadContent()
         {
             // Create a new SpriteBatch, which can be used to draw textures.
-            spriteBatch = new SpriteBatch(GraphicsDevice);
+            sSpriteBatch = new SpriteBatch(GraphicsDevice);
+            gameState = new GameState();
 
             // TODO: use this.Content to load your game content here
         }
@@ -62,6 +71,8 @@ namespace Unknown_Shadows
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
+            gameState.Update(gameTime);
+
             // TODO: Add your update logic here
 
             base.Update(gameTime);
@@ -76,6 +87,9 @@ namespace Unknown_Shadows
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             // TODO: Add your drawing code here
+            sSpriteBatch.Begin();
+            gameState.Draw(gameTime);
+            sSpriteBatch.End();
 
             base.Draw(gameTime);
         }
